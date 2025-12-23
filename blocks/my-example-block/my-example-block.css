@@ -1,0 +1,46 @@
+/* My Example Block - Hero Video Styles */
+
+.my-example-block.hero-video {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.my-example-block .hero-video-content {
+  max-width: 800px;
+  z-index: 2;
+}
+
+.my-example-block h1 {
+  font-size: var(--heading-font-size-xxl);
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+
+.my-example-block .hero-video-player {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
+}
+
+/* Responsive adjustments */
+@media (width <= 768px) {
+  .my-example-block h1 {
+    font-size: var(--heading-font-size-xl);
+  }
+
+  .my-example-block.hero-video {
+    min-height: 50vh;
+    padding: 1rem;
+  }
+}
